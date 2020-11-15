@@ -7,7 +7,7 @@ template:
   name: twilio-javascript-folder
 before:
   - type: createIssue
-    title: Prerequisite
+    title: Week 0
     body: 0.0-welcome.md
 steps:
   - title: 'Week 0: Welcome!'
@@ -21,41 +21,70 @@ steps:
       - type: createIssue
         title: Week 1
         body: 1.1-fizzbuzz.md
-  - title: 'Week 1: Github'
+  - title: 'Week 1: Fizzbuzz'
     description: Week 1 Description
     event: issue_comment.created
-    link: '{{ repoUrl }}/issues/1'
+    link: '{{ repoUrl }}/issues/2'
     actions:
       - type: respond
         with: 1.2-github.md
+  - title: 'Week 1: Github'
+    description: Week 1 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 0.0-response.md
       - type: createIssue
         title: Week 2
-        body: 2.1-parsing.md
-      - type: closeIssue
-        issue: 2
+        body: 2.1-concat.md     
   - title: 'Week 2: Concatenation'
     description: Week 2 Description
     event: issue_comment.created
+    link: '{{ repoUrl }}/issues/3'
     actions:
       - type: respond
         with: 2.2-sumarray.md
+        
+  - title: 'Week 2: Sum Array'
+    description: Week 1 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+      - type: respond
+        with: 0.0-response.md
       - type: createIssue
         title: Week 3
         body: 3.1-final.md
-      - type: closeIssue
-        issue: 3
-  - title: 'Week 3: Final Project'
+  - title: 'Week 3: Brainstorming'
     description: Week 3 Description
     event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
     actions:
       - type: respond
         with: 3.2-roman.md
+  - title: 'Week 3: Roman Numerals'
+    description: Week 1 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 0.0-response.md
       - type: createIssue
         title: Week 4
-        body: 3.1-final.md
+        body: 4.1-project.md
+   - title: 'Week 4: Final Projects '
+    description: Week 4 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 0.0-done.md
       - type: closeIssue
-        issue: 4
+        issue: 5
 tags:
   - Twilio
   - Twilio Quest
+  - Bit Project
+  - Bit Camp
   - JavaScript
