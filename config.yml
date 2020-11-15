@@ -47,7 +47,7 @@ steps:
         with: 2.2-sumarray.md
         
   - title: 'Week 2: Sum Array'
-    description: Week 1 Description
+    description: Week 2 Description
     event: issues.closed
     link: '{{ repoUrl }}/issues/3'
     actions:
@@ -64,7 +64,7 @@ steps:
       - type: respond
         with: 3.2-roman.md
   - title: 'Week 3: Roman Numerals'
-    description: Week 1 Description
+    description: Week 3 Description
     event: issues.closed
     link: '{{ repoUrl }}/issues/4'
     actions:
