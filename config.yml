@@ -76,7 +76,7 @@ steps:
    - title: 'Week 4: Final Projects '
     description: Week 4 Description
     event: issue_comment.created
-    link: '{{ repoUrl }}/issues/4'
+    link: '{{ repoUrl }}/issues/5'
     actions:
       - type: respond
         with: 0.0-done.md
