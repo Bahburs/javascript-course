@@ -30,6 +30,13 @@ steps:
         with: 1.2-github.md
   - title: 'Week 1: Github'
     description: Week 1 Description
+    event: issues_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 1.3-terminal.md    
+  - title: 'Week 1: Terminal'
+    description: Week 1 Description
     event: issues.closed
     link: '{{ repoUrl }}/issues/2'
     actions:
