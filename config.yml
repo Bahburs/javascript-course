@@ -30,7 +30,7 @@ steps:
         with: 1.2-github.md
   - title: 'Week 1: Github'
     description: Week 1 Description
-    event: issues_comment.created
+    event: issue_comment.created
     link: '{{ repoUrl }}/issues/2'
     actions:
       - type: respond
