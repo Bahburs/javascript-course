@@ -44,16 +44,41 @@ steps:
         with: 0.0-response.md
       - type: createIssue
         title: Week 2
-        body: 2.1-concat.md     
-  - title: 'Week 2: Concatenation'
+        body: 2.1-romancalc.md
+        
+  - title: 'Week 2: Roman Calc (p1)'
     description: Week 2 Description
     event: issue_comment.created
     link: '{{ repoUrl }}/issues/3'
     actions:
       - type: respond
-        with: 2.2-sumarray.md
+        with: 2.2-romancalc.md
         
-  - title: 'Week 2: Sum Array'
+  - title: 'Week 2: Roman Calc (p2)'
+    description: Week 2 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+      - type: respond
+        with: 2.3-romancalc.md
+        
+  - title: 'Week 2: Roman Calc (p3)'
+    description: Week 2 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+      - type: respond
+        with: 2.4-romancalc.md
+        
+  - title: 'Week 2: Roman Calc (p4)'
+    description: Week 2 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+      - type: respond
+        with: 2.5-romancalc.md
+        
+  - title: 'Week 3: Brainstorming (p1)'
     description: Week 2 Description
     event: issues.closed
     link: '{{ repoUrl }}/issues/3'
@@ -63,7 +88,7 @@ steps:
       - type: createIssue
         title: Week 3
         body: 3.1-final.md
-  - title: 'Week 3: Brainstorming'
+  - title: 'Week 3: Brainstorming (p2)'
     description: Week 3 Description
     event: issue_comment.created
     link: '{{ repoUrl }}/issues/4'
