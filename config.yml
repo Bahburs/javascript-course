@@ -81,7 +81,7 @@ steps:
       - type: respond
         with: 2.5-romancalc.md
         
-  - title: 'Week 3: Brainstorming (p1)'
+  - title: 'Week 3: Recursion Intro'
     description: Week 2 Description
     event: issues.closed
     link: '{{ repoUrl }}/issues/3'
@@ -90,17 +90,33 @@ steps:
         with: 0.0-response.md
       - type: createIssue
         title: Week 3
-        body: 3.1-final.md
+        body: 3.1-recursion-intro.md
         
-  - title: 'Week 3: Brainstorming (p2)'
+  - title: 'Week 3: Javascript Canvas'
     description: Week 3 Description
     event: issue_comment.created
     link: '{{ repoUrl }}/issues/4'
     actions:
       - type: respond
-        with: 3.2-roman.md
+        with: 3.2-javascriptcanvas.md
         
-  - title: 'Week 3: Roman Numerals'
+  - title: 'Week 3: Recursion Example'
+    description: Week 3 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 3.3recursionexample.md
+        
+  - title: 'Week 3: Creating Art'
+    description: Week 3 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 3.4-creatingart.md
+        
+  - title: 'Week 4: Final Projects (pt1)'
     description: Week 3 Description
     event: issues.closed
     link: '{{ repoUrl }}/issues/4'
@@ -111,7 +127,7 @@ steps:
         title: Week 4
         body: 4.1-project.md
         
-  - title: 'Week 4: Final Projects'
+  - title: 'Week 4: Final Projects (pt2)'
     description: Week 4 Description
     event: issue_comment.created
     link: '{{ repoUrl }}/issues/5'
