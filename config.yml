@@ -106,7 +106,7 @@ steps:
     link: '{{ repoUrl }}/issues/4'
     actions:
       - type: respond
-        with: 3.3recursionexample.md
+        with: 3.3-recursionexample.md
         
   - title: 'Week 3: Creating Art'
     description: Week 3 Description
